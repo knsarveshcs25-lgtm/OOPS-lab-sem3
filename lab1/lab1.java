@@ -36,6 +36,7 @@ public class lab1{
             students[i].accept_details();
          }
           System.out.println("\n--- Student Information ---");
+        s.close();
         
         System.out.println("----------------------------------------");
         for (int i = 0; i < x; i++) {
@@ -44,4 +45,6 @@ public class lab1{
         }
 
 }
+ 
+ 
 }
