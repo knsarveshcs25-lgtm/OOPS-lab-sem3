@@ -80,5 +80,6 @@ public class lab4 {
 
         parkingRef = new FourWheeler("KA-09-XY-9876", 4);
         parkingRef.displayParkingDetails();
+        System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
     }
 }

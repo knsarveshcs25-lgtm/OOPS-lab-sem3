@@ -104,5 +104,7 @@ public class lab2{
         Book costlier = b1.getCostlierBook(b2);
         System.out.println("The costlier book is:");
         costlier.display();
+        System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
+
     }
 }

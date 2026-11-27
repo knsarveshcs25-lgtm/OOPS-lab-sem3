@@ -72,6 +72,7 @@ public class lab6 {
 
         System.out.println("thank you for using the railway reservation management system.");
         scanner.close();
+        System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
     }
 }
 

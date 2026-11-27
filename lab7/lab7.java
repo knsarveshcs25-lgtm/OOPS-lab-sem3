@@ -77,5 +77,6 @@ public class lab7 {
         }
 
         sc.close();
+        System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
     }
 }

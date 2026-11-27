@@ -59,5 +59,6 @@ public class lab3 {
 
         source = new WindEnergy("WND-301", "Coastal Wind Turbine", 6200.0);
         source.displayDetails();
+        System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
     }
 }
