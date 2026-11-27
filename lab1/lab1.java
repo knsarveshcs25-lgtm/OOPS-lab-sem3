@@ -44,8 +44,5 @@ public class lab1{
             students[i].display_details();
         }
         System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
-
 }
- 
- 
 }

@@ -3,24 +3,20 @@ interface ParkingCharge {
     double calculateCharge();
     void displayParkingDetails();
 }
-
 class VehicleParking {
     protected String vehicleNumber;
     protected String vehicleType;
     protected int parkingHours;
-
     public VehicleParking(String vehicleNumber, String vehicleType, int parkingHours) {
         this.vehicleNumber = vehicleNumber;
         this.vehicleType = vehicleType;
         this.parkingHours = parkingHours;
     }
 }
-
 class TwoWheeler extends VehicleParking implements ParkingCharge {
     public TwoWheeler(String vehicleNumber, int parkingHours) {
         super(vehicleNumber, "Two Wheeler", parkingHours);
     }
-
     @Override
     public double calculateCharge() {
         if (parkingHours <= 0) {
@@ -31,7 +27,6 @@ class TwoWheeler extends VehicleParking implements ParkingCharge {
             return (2 * 20.0) + ((parkingHours - 2) * 10.0);
         }
     }
-
     @Override
     public void displayParkingDetails() {
         System.out.println("Vehicle Number : " + vehicleNumber);
@@ -41,12 +36,10 @@ class TwoWheeler extends VehicleParking implements ParkingCharge {
         System.out.println("---------------------------------------");
     }
 }
-
 class FourWheeler extends VehicleParking implements ParkingCharge {
     public FourWheeler(String vehicleNumber, int parkingHours) {
         super(vehicleNumber, "Four Wheeler", parkingHours);
     }
-
     @Override
     public double calculateCharge() {
         if (parkingHours <= 0) {
@@ -57,7 +50,6 @@ class FourWheeler extends VehicleParking implements ParkingCharge {
             return (2 * 50.0) + ((parkingHours - 2) * 30.0);
         }
     }
-
     @Override
     public void displayParkingDetails() {
         System.out.println("Vehicle Number : " + vehicleNumber);
@@ -67,17 +59,12 @@ class FourWheeler extends VehicleParking implements ParkingCharge {
         System.out.println("---------------------------------------");
     }
 }
-
-
 public class lab4 {
     public static void main(String[] args) {
         ParkingCharge parkingRef;
-
         System.out.println("=== Parking Charge Receipt ===\n");
-
         parkingRef = new TwoWheeler("KA-09-AB-1234", 5);
         parkingRef.displayParkingDetails();
-
         parkingRef = new FourWheeler("KA-09-XY-9876", 4);
         parkingRef.displayParkingDetails();
         System.out.println("\nKN Sarvesh Kumar\n1WN25CS104");
